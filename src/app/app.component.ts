@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/envioronments/environment';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'phygitalz-task';
+
+  
+
+  ngOnInit(): void {
+    
+  }
+
+ 
+  
+
 }

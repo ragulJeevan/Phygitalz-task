@@ -1,0 +1,24 @@
+<button>Create Issue</button>
+
+<table>
+    <thead>
+        <tr>
+            <td>Issue no</td>
+            <td>Description</td>
+            <td>Assigned to</td>
+            <td>Due Date</td>
+            <td>Type</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let issue of issueData;let i = index" >
+            <td>{{issue.id}}</td>
+            <td>{{issue.issue_description}}</td>
+            <td>{{issue.assigned_to}}</td>
+            <td>{{issue.due_date}}</td>
+            <td>{{issue.issue_type}}</td>
+            <td><button>nothing</button></td>
+        </tr>
+    </tbody>
+</table>

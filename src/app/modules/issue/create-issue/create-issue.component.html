@@ -1,0 +1,50 @@
+<div>
+    <form  [formGroup]="issueForm">
+        <!-- related to  -->
+        <div class="col-md-4">
+            <span><button (click)="relatedIssue('school')" >School</button></span> 
+             <span><button (click)="relatedIssue('student')" >Student</button></span>
+          </div>
+        <!-- description -->
+        <div class="col-md-4">
+            <label class="required">Description</label>
+            <input type="text" formControlName="issue_description" />
+          </div>
+        <!-- issue type -->
+        <div class="col-md-4">
+            <label class="required">Issue Type</label>
+           
+                <select [(ngModel)]="selectedType" (change)="haveSubType()"  [ngModelOptions]="{standalone: true}" >
+                    <option value= null [attr.disabled]="true" selected  >Select Issue Type</option>
+                    <option *ngFor = "let type of issueType " [ngValue]="type" >{{type.issue_type_name}}</option>
+                </select>
+          </div>
+        <!-- issue-sub-type  -->
+        <div class="col-md-4">
+            <label class="required">Sub Type</label>
+       
+            <select formControlName="issue_sub_type" >
+                <option value=null [attr.disabled]="true" selected  >Select Issue Sub Type</option>
+                <option *ngFor = "let type of issueSubType " [ngValue]="type.issue_sub_type_name" >{{type.issue_sub_type_name}}</option>
+            </select>
+          </div>
+        <!-- due date  -->
+        <div class="col-md-4">
+            <label class="required">Due date</label>
+            <input type="date" formControlName="due_date" />
+          </div>
+        <!-- assigned to  -->
+        <div class="col-md-4">
+            <label class="required">assigned To</label>
+            <!-- <input type="text" formControlName="assigned_to" /> -->
+            <select formControlName="assigned_to" >
+                <option value=null [attr.disabled]="true" selected  >Select Assignee</option>
+                <option *ngFor = "let ass of assignee " [ngValue]="ass.user_name" >{{ass.user_name}}</option>
+            </select>
+          </div>
+        <!-- attachements  -->
+
+        <!-- button to create  -->
+        <button type="submit" (click)="createIssue()" >Create</button>
+    </form>
+</div>
