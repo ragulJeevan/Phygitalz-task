@@ -29,6 +29,12 @@ export class IssueListComponent implements OnInit {
   public  currentAssignee : string = 'VISHAL';
   // VARIABLE TO STORE CREATED USER 
   public createdUser : string = 'VISHAL';
+  // TO STORE SELECTED ISSUE 
+  public selectedIssue:any;
+  // TO STORE SEARCHED TEXT 
+  public search_key : any = '';
+  // TO IDENTIFY SEARCH 
+  public isSearch : boolean = false;
 
 
   constructor(
@@ -60,23 +66,23 @@ export class IssueListComponent implements OnInit {
     let url = 'issueDetails';
     this.issueService.getIssue(url).subscribe((res:any)=>{
       let responseData = res ? res : [];
-      let openCount = responseData?.filter((x:any)=>x.issue_status == 'open');
-      this.openIssue = openCount?.length;
-      let resolvedCount = responseData?.filter((x:any)=>x.issue_status == 'resolved');
-      this.resolvedIssue = resolvedCount?.length;
-      let closeCount = responseData?.filter((x:any)=>x.issue_status == 'closed');
-      this.closedIssue = closeCount?.length;
+      let filteredData:any;
       if(this.assignedStatus == 'assigned_to_me'){
-        this.issueData = responseData.filter((x:any)=> 
+        filteredData = responseData.filter((x:any)=> 
         x.issue_related_to == this.relatedStatus &&
-        x.assigned_to == this.currentAssignee &&
-        x.issue_status == this.typeStatus );
+        x.assigned_to == this.currentAssignee);
       }else{
-        this.issueData = responseData.filter((x:any)=> 
+        filteredData = responseData.filter((x:any)=> 
         x.issue_related_to == this.relatedStatus &&
-        x.created_by == this.createdUser &&
-        x.issue_status == this.typeStatus );
+        x.created_by == this.createdUser);
       }
+        let openCount = filteredData?.filter((x:any)=>x.issue_status == 'open');
+        this.openIssue = openCount?.length;
+        let resolvedCount = filteredData?.filter((x:any)=>x.issue_status == 'resolved');
+        this.resolvedIssue = resolvedCount?.length;
+        let closeCount = filteredData?.filter((x:any)=>x.issue_status == 'closed');
+        this.closedIssue = closeCount?.length;
+        this.issueData = filteredData.filter((x:any)=>x.issue_status == this.typeStatus);
     
     },((err:any)=>{
       console.log(err.error);
@@ -106,11 +112,57 @@ openCreateIssue(modal: any) {
     windowClass: 'custom-modal' 
   });
 }
+// TO CLOSE CREATE ISSUE MODAL 
 closeModal(event:any) {
   if(event){
     this.filteredIssues('','');
     this.modalService.dismissAll();
   }
+  }
+  // TO OPEN DELETE MODAL 
+  openDeleteModal(modal: any,data:any){
+    this.selectedIssue = data;
+    this.modalService.open(modal, {
+      size: 'sm',
+      ariaLabelledBy: 'modal-basic-title',
+      backdrop: 'static',
+      keyboard: false,
+      windowClass: 'custom-modal' 
+    });
+  }
+// TO CLOSE DELETE MODAL 
+  closeDeleteModal(){
+    this.modalService.dismissAll();
+  }
+  // TO DELETE SELECTED ISSUE 
+  deleteItem(){
+    let url = 'issueDetails';
+    let id = this.selectedIssue.id;
+    this.issueService.deleteIssue(url,id).subscribe((res:any)=>{
+      alert('Issue Deleted Succesfuylly');
+      this.closeDeleteModal();
+      this.filteredIssues('','');
+    },((err:any)=>{
+      console.log(err.error);
+      
+    }))
+  }
+  // TO SEARCH ISSUE  
+  searchIssues(){
+    if(this.search_key != ''){
+      this.issueData = this.issueData.filter((x:any)=>
+    x.id == this.search_key ||
+    x.issue_description  == this.search_key ||
+    x.assigned_to == this.search_key ||
+    x.due_date == this.search_key ||
+    x.issue_type == this.search_key 
+    );
+    this.isSearch = true;
+    }else{
+      this.filteredIssues('','');
+      this.isSearch = false;
+    }
+    
   }
 
 }

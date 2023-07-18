@@ -66,7 +66,8 @@ export class CreateIssueComponent implements OnInit {
       issue_related_to : this.issueRelated ? this.issueRelated : ''
     })
     if (this.issueForm.invalid) {
-      this.toastr.error('Please fill in all mandatory fields');
+      // this.toastr.error('Please fill in all mandatory fields');
+      alert('Please fill in all mandatory fields');
       return;
     }
 
@@ -85,13 +86,15 @@ export class CreateIssueComponent implements OnInit {
       attachements: issueDetails.attachements,
     };
     this.issueService.postIssue(url, payLoad).subscribe((res: any) => {
-      this.toastr.success('Issue Created Successfully');
+      // this.toastr.success('Issue Created Successfully');
+      alert('Issue Created Successfully');
       this.resetForm();
       this.closeModal();
     }, ((err: any) => {
       console.log(err.error);
       if (err.error && err.error.message) {
-        this.toastr.error(err.error.message);
+        // this.toastr.error(err.error.message);
+        alert(err.error.message);
       }
 
     }))

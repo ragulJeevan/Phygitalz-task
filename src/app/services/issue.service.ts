@@ -25,4 +25,9 @@ postIssue(url:string,payLoad:any){
   return this.http.post(`${baseurl}/${url}`,payLoad);
 }
 
+// ISSUE RELATED DELETE API 
+deleteIssue(url:string,id:number){
+  return this.http.delete(`${baseurl}/${url}/${id}`);
+}
+
 }

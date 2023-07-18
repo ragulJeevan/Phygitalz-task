@@ -14,8 +14,11 @@
     <!-- SEARCH ISSUE  -->
     <div class="col-md-6">
       <div class="search-container">
-        <span><button><i class="fas fa-search fa-lg"></i></button></span>
-        <input type="text" placeholder="Search Issues" class="custom-input">
+        <span>
+          <button class="close" *ngIf = 'isSearch' (click)="search_key='';searchIssues()" >&times;</button>
+          <button *ngIf = '!isSearch' (click)="searchIssues()" ><i class="fas fa-search fa-lg"  ></i></button>
+        </span>
+        <input  type="text" placeholder="Search Issues" class="custom-input" (keyup.enter)="searchIssues()"  [(ngModel)]="search_key" >
       </div>
     </div>
   </div>
@@ -100,13 +103,20 @@
       <tr *ngFor="let issue of issueData; let i = index"[ngClass]="{ 'striped-row': i % 2 === 0 }">
         <td style="width: 15%;">{{ issue.id }}</td>
         <td style="width: 40%;">{{ issue.issue_description }}</td>
-        <td style="width: 15%;">{{ issue.assigned_to }}</td>
+        <td style="width: 15%;"  >
+          <div class="align-items-center">
+            <span><img class="header__user-photo" src="../../../assets/empty.jpg" alt="User Photo"></span>
+               <span class="user-info" >{{ issue.assigned_to }}</span>
+          </div>
+          
+         
+        </td>
         <td style="width: 15%;">{{ issue.due_date }}</td>
         <td style="width: 10%;">{{ issue.issue_type }}</td>
         <td style="width: 15%;">
           <div  class="button-container" >
             <button  ><i class="fa fa-eye" style="color:#871987; font-size:20px" aria-hidden="true"></i></button>
-            <button><i class="fa fa-trash" style="color:#871987; font-size:20px" aria-hidden="true"></i></button>
+            <button (click)="openDeleteModal(delete,issue)" ><i class="fa fa-trash" style="color:#871987; font-size:20px" aria-hidden="true"></i></button>
           </div>
         </td>
       </tr>
@@ -117,6 +127,31 @@
     </tbody>
   </table>
 </div>
+
+<!-- Delete Modal -->
+<ng-template #delete let-modal >
+  <div class="custom-modal1">
+    <div class="modal">
+      <!-- Modal header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Delete Confirmation</h5>
+        <button type="button" class="close" (click)="closeDeleteModal()">&times;</button>
+      </div>
+  
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p class="fw-bold">Are you sure you want to delete this item?</p>
+      </div>
+  
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn-primary" (click)="closeDeleteModal()">Cancel</button>
+        <button type="button" class="btn-danger" (click)="deleteItem()">Delete</button>
+      </div>
+    </div>
+  </div>
+ 
+</ng-template>
 
 <!-- CREATE ISSUE MODAL  -->
 <ng-template #createIssue let-modal>
