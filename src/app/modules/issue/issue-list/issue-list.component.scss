@@ -15,11 +15,12 @@
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   height: 68vh;
   overflow-x: scroll;
-// FOR ROW 
+
+  // FOR ROW 
   .row {
     display: flex;
 
-// FOR COL 
+    // FOR COL 
     .col-md-3 {
       flex-basis: 25%;
       justify-content: center;
@@ -29,7 +30,8 @@
       flex-basis: 50%;
       padding: 0 10px;
     }
-// FOR SEARCH INPUT 
+
+    // FOR SEARCH INPUT 
     input {
       background: #e7dddd;
       border: none;
@@ -39,7 +41,8 @@
     }
 
   }
-// FOR BUTTON INSIDE CARD 
+
+  // FOR BUTTON INSIDE CARD 
   button {
     padding: 10px;
     // background: linear-gradient(to left, #800080, rgb(189 53 121 / 73%));
@@ -54,12 +57,14 @@
       background-color: #aaa;
     }
   }
-// FOR TABLE INSIODE CARD 
+
+  // FOR TABLE INSIODE CARD 
 
   table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+
     thead {
       background-color: #f2f2f24a;
       border-bottom: 1px solid;
@@ -75,24 +80,29 @@
     th {
       font-weight: bold;
     }
+
     .striped-row {
       background-color: #e3dede;
     }
+
     .no-data-cell {
       text-align: center;
     }
   }
 }
-.active{
+
+.active {
   background-color: #800078db !important;
   color: #ffffff !important;
 }
+
 // TO SHOW LIGHT TEXT
 .fw-dull {
   color: #a7a1a1;
   font-size: 25px;
   font-weight: bold;
 }
+
 // SEARCH INPUT STYLES 
 .search-container {
   display: flex;
@@ -102,7 +112,8 @@
   .custom-input {
     font-size: 16px;
   }
-// SEARCH ICON STYLES 
+
+  // SEARCH ICON STYLES 
   button {
     font-size: 20px;
     background: none;
@@ -110,10 +121,12 @@
   }
 
 }
+
 // FOR ISSUE RELATED BUTTON 
 .cluster {
   padding: 10px 25px !important;
 }
+
 // FOR ISSUE STATUS COUNT FILTERS 
 .container {
   display: flex;
@@ -140,28 +153,32 @@
   font-size: 25px;
   margin-bottom: 2px;
 }
+
 // FOR FONT BOLD 
 .fw-bold {
   font-weight: bold;
   font-size: 17px;
   color: black;
 }
+
 // FOR MARGIN TOP 
 .mt {
   margin-top: 25px;
 }
+
 // FOR SEARCH BUTTON 
 .button-container {
   display: flex;
-  
+
 }
 
 .button-container button {
   margin-right: 10px;
   background: none;
 }
+
 // CREATE ISSUE BUTTON 
-.create-issue{
+.create-issue {
   margin-top: 10px;
   padding: 15px 50px;
   margin-left: 25px;
@@ -172,6 +189,7 @@
   font-weight: bold;
   font-size: 16px;
 }
+
 // CREATE ISSUE MODAL 
 .custom-modal {
   position: fixed;
@@ -183,13 +201,14 @@
   width: 60vh;
   height: 60vh;
 }
-.custom-modal1{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border-radius: 4px;
+
+.custom-modal1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 4px;
 }
 
 .modal {
@@ -205,14 +224,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background:linear-gradient(to left, #800080, rgb(189 53 121 / 73%));
+    background: linear-gradient(to left, #800080, rgb(189 53 121 / 73%));
     // border-bottom: 1px solid #ddd;
 
     .modal-title {
       margin: 0;
       font-size: 18px;
       font-weight: bold;
-      color:white;
+      color: white;
     }
 
     .close {
@@ -239,40 +258,44 @@
     padding: 10px;
   }
 }
-.btn-primary{
-    color: #6d0e60;
-    background: none;
-    border: 1px solid;
-    border-radius: 25px;
-    padding: 10px 25px;
-    cursor:pointer;
-    transition: background-color 0.3s ease;
 
-    &:hover {
-      background-color: #6d0e60;
-      color: #fff;
-    }
+.btn-primary {
+  color: #6d0e60;
+  background: none;
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #6d0e60;
+    color: #fff;
+  }
 }
-.btn-danger{
+
+.btn-danger {
   color: red;
   background: none;
   border: 1px solid;
   border-radius: 25px;
   padding: 10px 25px;
-  cursor:pointer;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 
-    &:hover {
-      background-color: red;
-      color: #fff;
-    }
+  &:hover {
+    background-color: red;
+    color: #fff;
+  }
 }
+
 .header__user-photo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
 }
+
 .align-items-center {
   display: flex;
   align-items: center;
@@ -282,6 +305,3 @@
   margin-right: 10px;
   text-align: center;
 }
-
-
-

@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   // TO STORE LOGGEDIN USER 
-  public currentLogger : string = 'VISHAL';
+  public currentLogger: string = 'VISHAL';
   ngOnInit(): void {
-   console.log(this.currentLogger);
-   
+    console.log(this.currentLogger);
+
   }
 
 }

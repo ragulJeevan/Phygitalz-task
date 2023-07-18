@@ -11,23 +11,23 @@ const baseurl = environment.BASE_URL;
 export class IssueService {
 
   constructor(
-    private http : HttpClient,
+    private http: HttpClient,
   ) { }
 
 
   // ISSUE RELATED GET API 
-  getIssue(url:string){
+  getIssue(url: string) {
     return this.http.get(`${baseurl}/${url}`);
   }
 
-// ISSUE RELATED POST API 
-postIssue(url:string,payLoad:any){
-  return this.http.post(`${baseurl}/${url}`,payLoad);
-}
+  // ISSUE RELATED POST API 
+  postIssue(url: string, payLoad: any) {
+    return this.http.post(`${baseurl}/${url}`, payLoad);
+  }
 
-// ISSUE RELATED DELETE API 
-deleteIssue(url:string,id:number){
-  return this.http.delete(`${baseurl}/${url}/${id}`);
-}
+  // ISSUE RELATED DELETE API 
+  deleteIssue(url: string, id: number) {
+    return this.http.delete(`${baseurl}/${url}/${id}`);
+  }
 
 }

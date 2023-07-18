@@ -1,12 +1,12 @@
 <div class="card">
   <div class="card-header">
-   <div class="rectangle" >
-    <span>CREATE ISSUE</span>
-   </div>
+    <div class="rectangle">
+      <span>CREATE ISSUE</span>
+    </div>
   </div>
   <div class="card-body">
     <form [formGroup]="issueForm">
-       <!-- related to  -->
+      <!-- related to  -->
       <div class="form-group">
         <label for="relatedTo">Related To</label>
         <div class="button-group">
@@ -14,48 +14,50 @@
           <button type="button" class="btn" (click)="relatedIssue('student')">Student</button>
         </div>
       </div>
-       <!-- description -->
+      <!-- description -->
       <div class="form-group">
         <label for="description" class="required">Description</label>
-        <textarea  formControlName="issue_description" id="description" class="form-control" cols="10" rows="2"></textarea>
+        <textarea formControlName="issue_description" id="description" class="form-control" cols="10"
+          rows="2"></textarea>
       </div>
-       <!-- issue type -->
+      <!-- issue type -->
       <div class="form-group">
         <label for="issueType" class="required">Issue Type</label>
-      <select [(ngModel)]="selectedType" (change)="haveSubType()" id="issueType" class="form-control"  [ngModelOptions]="{standalone: true}" >
-        <option value="" disabled selected>Select Issue Type</option>
-        <option *ngFor="let type of issueType" [ngValue]="type">{{type.issue_type_name}}</option>
-      </select>
+        <select [(ngModel)]="selectedType" (change)="haveSubType()" id="issueType" class="form-control"
+          [ngModelOptions]="{standalone: true}">
+          <option value="" disabled selected>Select Issue Type</option>
+          <option *ngFor="let type of issueType" [ngValue]="type">{{type.issue_type_name}}</option>
+        </select>
       </div>
-       <!-- issue-sub-type  -->
+      <!-- issue-sub-type  -->
       <div class="form-group">
         <label for="subType" class="required">Sub Type</label>
-          <select formControlName="issue_sub_type" id="subType" class="form-control"  >
-            <option value="" disabled selected>Select Issue Sub Type</option>
-            <option *ngFor="let type of issueSubType" [ngValue]="type.issue_sub_type_name">{{type.issue_sub_type_name}}</option>
-          </select>
+        <select formControlName="issue_sub_type" id="subType" class="form-control">
+          <option value="" disabled selected>Select Issue Sub Type</option>
+          <option *ngFor="let type of issueSubType" [ngValue]="type.issue_sub_type_name">{{type.issue_sub_type_name}}
+          </option>
+        </select>
       </div>
-       <!-- due date  -->
+      <!-- due date  -->
       <div class="form-group">
         <label for="dueDate" class="required">Due Date</label>
-        <input  type="date" formControlName="due_date" id="dueDate" class="form-control" />
+        <input type="date" formControlName="due_date" id="dueDate" class="form-control" />
       </div>
       <!-- assigned to  -->
       <div class="form-group">
         <label for="assignedTo" class="required">Assigned To</label>
-        <select formControlName="assigned_to" id="assignedTo" class="form-control"  >
+        <select formControlName="assigned_to" id="assignedTo" class="form-control">
           <option value="" disabled selected>Select Assignee</option>
           <option *ngFor="let ass of assignee" [ngValue]="ass.user_name">{{ass.user_name}}</option>
         </select>
       </div>
       <!-- attachements  -->
 
-        <!-- button to create  -->
-        <div class="end-button">
-          <button type="submit"  (click)="createIssue()" class="btn ">Create</button>
-          <button type="submit"  (click)="closeModal()" class=" btn-outline">Cancel</button>
-        </div>
+      <!-- button to create  -->
+      <div class="end-button">
+        <button type="submit" (click)="createIssue()" class="btn ">Create</button>
+        <button type="submit" (click)="closeModal()" class=" btn-outline">Cancel</button>
+      </div>
     </form>
   </div>
 </div>
-

@@ -10,10 +10,10 @@ const baseurl = environment.BASE_URL;
 export class CommonService {
 
   constructor(
-    private http : HttpClient,
+    private http: HttpClient,
   ) { }
-
-  getUser(url:string){
+  // TO GET USERS 
+  getUser(url: string) {
     return this.http.get(`${baseurl}/${url}`);
   }
 

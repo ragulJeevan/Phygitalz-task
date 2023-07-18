@@ -25,11 +25,11 @@ export class CreateIssueComponent implements OnInit {
   // VARIABLE TO STORE SELECTED  TYPE 
   public selectedType: any = null;
   // VARIABLE TO STORE ISSUE RELATED TO 
-  public issueRelated : string = '';
+  public issueRelated: string = '';
   // VARIABLE TO STORE ASSIGNEE 
-  public assignee : any = [];
+  public assignee: any = [];
   // VARIABLE TO STORE LOGGED IN ASSIGNEE 
-  public currentUser : string = 'VISHAL';
+  public currentUser: string = 'VISHAL';
 
   constructor(
     private commonService: CommonService,
@@ -62,8 +62,8 @@ export class CreateIssueComponent implements OnInit {
     }
     this.issueForm.patchValue({
       id: issue_id ? issue_id : null,
-      issue_type : this.selectedType?.issue_type_name ? this.selectedType?.issue_type_name : '',
-      issue_related_to : this.issueRelated ? this.issueRelated : ''
+      issue_type: this.selectedType?.issue_type_name ? this.selectedType?.issue_type_name : '',
+      issue_related_to: this.issueRelated ? this.issueRelated : ''
     })
     if (this.issueForm.invalid) {
       // this.toastr.error('Please fill in all mandatory fields');
@@ -81,8 +81,8 @@ export class CreateIssueComponent implements OnInit {
       issue_sub_type: issueDetails.issue_sub_type,
       due_date: issueDetails.due_date,
       assigned_to: issueDetails.assigned_to,
-      created_by:this.currentUser,
-      issue_status:'open',
+      created_by: this.currentUser,
+      issue_status: 'open',
       attachements: issueDetails.attachements,
     };
     this.issueService.postIssue(url, payLoad).subscribe((res: any) => {
@@ -110,9 +110,9 @@ export class CreateIssueComponent implements OnInit {
   // TO AVAIL ALL RELATED ISSUE DETAILS 
   relatedIssue(data: any) {
     this.resetForm();
-   this.issueRelated = data;
-   this.getIssueType(data);
-   this.getUser();
+    this.issueRelated = data;
+    this.getIssueType(data);
+    this.getUser();
   }
 
   // TO GET ISSUE TYPE 
@@ -152,32 +152,32 @@ export class CreateIssueComponent implements OnInit {
     }))
   }
   // TO GET USERS 
-  getUser(){
+  getUser() {
     let url = 'users';
-    this.commonService.getUser(url).subscribe((res:any)=>{
-      if(res){
-        if(this.issueRelated == 'school'){
+    this.commonService.getUser(url).subscribe((res: any) => {
+      if (res) {
+        if (this.issueRelated == 'school') {
           this.assignee = res ? res?.facultyData : [];
-        }else{
-          this.assignee = res?  res?.studentData : [];
+        } else {
+          this.assignee = res ? res?.studentData : [];
         }
       }
-    },((err:any)=>{
+    }, ((err: any) => {
       console.log(err.error);
-      
+
     }))
   }
   // TO REST FORM 
-  resetForm(){
+  resetForm() {
     this.issueForm.reset();
     this.selectedType = null;
-    this.issueRelated= '';
+    this.issueRelated = '';
     this.issueType = [];
     this.issueSubType = [];
     this.assignee = [];
   }
   // TO CLOSE MODAL 
-  closeModal(){
+  closeModal() {
     this.closeIssue.emit(true);
   }
 }

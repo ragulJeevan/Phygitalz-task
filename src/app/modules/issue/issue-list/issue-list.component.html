@@ -1,92 +1,99 @@
 <!-- CREATE ISSUE BUTTON  -->
-<button class="create-issue" (click)="openCreateIssue(createIssue)" >Create Issue</button>
-  
+<button class="create-issue" (click)="openCreateIssue(createIssue)">Create Issue</button>
+
 <div class="card ">
- 
+
   <!-- ISSUE DETAILS AND SEARCH -->
   <div class="row">
     <!-- CARD HEADING -->
     <div class="col-md-6">
- <h1 >
-  <span class="heading" >ISSUE DETAILS</span>
-</h1>
+      <h1>
+        <span class="heading">ISSUE DETAILS</span>
+      </h1>
     </div>
     <!-- SEARCH ISSUE  -->
     <div class="col-md-6">
       <div class="search-container">
         <span>
-          <button class="close" *ngIf = 'isSearch' (click)="search_key='';searchIssues()" >&times;</button>
-          <button *ngIf = '!isSearch' (click)="searchIssues()" ><i class="fas fa-search fa-lg"  ></i></button>
+          <button class="close" *ngIf='isSearch' (click)="search_key='';searchIssues()">&times;</button>
+          <button *ngIf='!isSearch' (click)="searchIssues()"><i class="fas fa-search fa-lg"></i></button>
         </span>
-        <input  type="text" placeholder="Search Issues" class="custom-input" (keyup.enter)="searchIssues()"  [(ngModel)]="search_key" >
+        <input type="text" placeholder="Search Issues" class="custom-input" (keyup.enter)="searchIssues()"
+          [(ngModel)]="search_key">
       </div>
     </div>
   </div>
-  
+
   <!-- FILTERS TO USE -->
   <div class="row">
     <!-- SHOW ISSUES  -->
     <div class="col-md-3 mt">
-      <span class="fw-dull" >Show issues</span>
+      <span class="fw-dull">Show issues</span>
       <div class="row">
         <div class="col-md-4">
-          <button (click)="filteredIssues('show Issues','created_by_me')" [ngClass]="{'active': assignedStatus === 'created_by_me'}" >Created By me</button>
+          <button (click)="filteredIssues('show Issues','created_by_me')"
+            [ngClass]="{'active': assignedStatus === 'created_by_me'}">Created By me</button>
         </div>
         <div class="col-md-4">
-          <button (click)="filteredIssues('show Issues','assigned_to_me')" [ngClass]="{'active': assignedStatus === 'assigned_to_me'}" >Assigned to me</button>
+          <button (click)="filteredIssues('show Issues','assigned_to_me')"
+            [ngClass]="{'active': assignedStatus === 'assigned_to_me'}">Assigned to me</button>
         </div>
       </div>
     </div>
     <!-- ISSUES RELATED  -->
     <div class="col-md-3 mt">
-      <span class="fw-dull" >Issues Related To</span>
-     
+      <span class="fw-dull">Issues Related To</span>
+
       <div class="row">
         <div class="col-md-3">
-          <button class="cluster" (click)="filteredIssues('issue_related','school')" [ngClass]="{'active': relatedStatus === 'school'}" >School</button>
+          <button class="cluster" (click)="filteredIssues('issue_related','school')"
+            [ngClass]="{'active': relatedStatus === 'school'}">School</button>
         </div>
         <div class="col-md-3">
-          <button class="cluster" (click)="filteredIssues('issue_related','student')" [ngClass]="{'active': relatedStatus === 'student'}" >Student</button>
+          <button class="cluster" (click)="filteredIssues('issue_related','student')"
+            [ngClass]="{'active': relatedStatus === 'student'}">Student</button>
         </div>
       </div>
     </div>
     <!-- ISSUE STATUS COUNT  -->
     <div class="col-md-6">
       <div class="container">
-         <!-- TOTAL  -->
-         <!-- <button class="section" (click)="filteredIssues('status','total')" [ngClass]="{'active': typeStatus === 'total'}" >
+        <!-- TOTAL  -->
+        <!-- <button class="section" (click)="filteredIssues('status','total')" [ngClass]="{'active': typeStatus === 'total'}" >
           <div class="circle">
             {{totalIssue}}
           </div>
           <span class="fw-bold" >Total</span>
         </button> -->
         <!-- OPEN  -->
-        <button class="section" (click)="filteredIssues('status','open')" [ngClass]="{'active': typeStatus === 'open'}" >
+        <button class="section" (click)="filteredIssues('status','open')" [ngClass]="{'active': typeStatus === 'open'}">
           <div class="circle">
             {{openIssue}}
           </div>
-          <span class="fw-bold" >Open</span>
+          <span class="fw-bold">Open</span>
         </button>
         <!-- RESOLVED  -->
-        <button class="section" (click)="filteredIssues('status','resolved')" [ngClass]="{'active': typeStatus === 'resolved'}" >
+        <button class="section" (click)="filteredIssues('status','resolved')"
+          [ngClass]="{'active': typeStatus === 'resolved'}">
           <div class="circle">
             {{resolvedIssue}}
           </div>
-          <span class="fw-bold" >Resolved</span>
+          <span class="fw-bold">Resolved</span>
         </button>
         <!-- CLOSED  -->
-        <button class="section" (click)="filteredIssues('status','closed')" [ngClass]="{'active': typeStatus === 'closed'}" >
+        <button class="section" (click)="filteredIssues('status','closed')"
+          [ngClass]="{'active': typeStatus === 'closed'}">
           <div class="circle">
             {{closedIssue}}
           </div>
-          <span class="fw-bold" >Closed</span>
+          <span class="fw-bold">Closed</span>
         </button>
-       
+
       </div>
-      
+
     </div>
   </div>
-  
+
   <!-- TABLE OF CONTENTS -->
   <table>
     <thead>
@@ -100,36 +107,37 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let issue of issueData; let i = index"[ngClass]="{ 'striped-row': i % 2 === 0 }">
+      <tr *ngFor="let issue of issueData; let i = index" [ngClass]="{ 'striped-row': i % 2 === 0 }">
         <td style="width: 15%;">{{ issue.id }}</td>
         <td style="width: 40%;">{{ issue.issue_description }}</td>
-        <td style="width: 15%;"  >
+        <td style="width: 15%;">
           <div class="align-items-center">
             <span><img class="header__user-photo" src="../../../assets/empty.jpg" alt="User Photo"></span>
-               <span class="user-info" >{{ issue.assigned_to }}</span>
+            <span class="user-info">{{ issue.assigned_to }}</span>
           </div>
-          
-         
+
+
         </td>
         <td style="width: 15%;">{{ issue.due_date }}</td>
         <td style="width: 10%;">{{ issue.issue_type }}</td>
         <td style="width: 15%;">
-          <div  class="button-container" >
-            <button  ><i class="fa fa-eye" style="color:#871987; font-size:20px" aria-hidden="true"></i></button>
-            <button (click)="openDeleteModal(delete,issue)" ><i class="fa fa-trash" style="color:#871987; font-size:20px" aria-hidden="true"></i></button>
+          <div class="button-container">
+            <button><i class="fa fa-eye" style="color:#871987; font-size:20px" aria-hidden="true"></i></button>
+            <button (click)="openDeleteModal(delete,issue)"><i class="fa fa-trash" style="color:#871987; font-size:20px"
+                aria-hidden="true"></i></button>
           </div>
         </td>
       </tr>
       <!-- NO DATA  -->
-      <tr *ngIf = "issueData?.length === 0" >
-        <td colspan="6"  class=" no-data-cell fw-bold">NO DATA TO SHOW</td>
+      <tr *ngIf="issueData?.length === 0">
+        <td colspan="6" class=" no-data-cell fw-bold">NO DATA TO SHOW</td>
       </tr>
     </tbody>
   </table>
 </div>
 
 <!-- Delete Modal -->
-<ng-template #delete let-modal >
+<ng-template #delete let-modal>
   <div class="custom-modal1">
     <div class="modal">
       <!-- Modal header -->
@@ -137,12 +145,12 @@
         <h5 class="modal-title">Delete Confirmation</h5>
         <button type="button" class="close" (click)="closeDeleteModal()">&times;</button>
       </div>
-  
+
       <!-- Modal body -->
       <div class="modal-body">
         <p class="fw-bold">Are you sure you want to delete this item?</p>
       </div>
-  
+
       <!-- Modal footer -->
       <div class="modal-footer">
         <button type="button" class="btn-primary" (click)="closeDeleteModal()">Cancel</button>
@@ -150,13 +158,12 @@
       </div>
     </div>
   </div>
- 
+
 </ng-template>
 
 <!-- CREATE ISSUE MODAL  -->
 <ng-template #createIssue let-modal>
   <div class="custom-modal">
-    <app-create-issue (closeIssue)="closeModal($event)" ></app-create-issue>
+    <app-create-issue (closeIssue)="closeModal($event)"></app-create-issue>
   </div>
 </ng-template>
-
