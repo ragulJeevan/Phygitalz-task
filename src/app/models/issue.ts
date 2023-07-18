@@ -6,5 +6,7 @@ export interface Issue {
       issue_sub_type : string,
       due_date : string,
       assigned_to :  string,
+      created_by: string,
+      issue_status:string,
       attachements : object,
 }

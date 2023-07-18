@@ -1,0 +1,24 @@
+.header {
+    background: linear-gradient(to left, #800080, rgb(189 53 121 / 73%));
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .header__heading {
+    margin: 0;
+  }
+  
+  .header__user {
+    display: flex;
+    align-items: center;
+  }
+  .header__user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  

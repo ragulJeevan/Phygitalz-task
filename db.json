@@ -84,8 +84,10 @@
       "issue_related_to": "school",
       "issue_type": "Facilities",
       "issue_sub_type": "Class Room",
-      "due_date": "",
+      "due_date": "2023-07-20",
       "assigned_to": "VISHAL",
+      "created_by": "GANESH",
+      "issue_status": "open",
       "attachements": {}
     },
     {
@@ -94,8 +96,10 @@
       "issue_related_to": "school",
       "issue_type": "Facilities",
       "issue_sub_type": "Class Room",
-      "due_date": "",
+      "due_date": "2023-07-20",
       "assigned_to": "VISHAL",
+      "created_by": "GANESH",
+      "issue_status": "open",
       "attachements": {}
     },
     {
@@ -104,8 +108,10 @@
       "issue_related_to": "school",
       "issue_type": "Facilities",
       "issue_sub_type": "Class Room",
-      "due_date": "",
-      "assigned_to": "VISHAL",
+      "due_date": "2023-07-20",
+      "assigned_to": "GANESH",
+      "created_by": "VISHAL",
+      "issue_status": "open",
       "attachements": {}
     },
     {
@@ -114,8 +120,10 @@
       "issue_related_to": "school",
       "issue_type": "Facilities",
       "issue_sub_type": "Class Room",
-      "due_date": "",
+      "due_date": "2023-07-20",
       "assigned_to": "VISHAL",
+      "created_by": "GANESH",
+      "issue_status": "open",
       "attachements": {}
     },
     {
@@ -126,6 +134,8 @@
       "issue_sub_type": "Class Room",
       "due_date": "2023-07-20",
       "assigned_to": "VISHAL",
+      "created_by": "GANESH",
+      "issue_status": "open",
       "attachements": {}
     },
     {
@@ -136,6 +146,8 @@
       "issue_sub_type": "Securities",
       "due_date": "2023-07-28",
       "assigned_to": "GANESH",
+      "created_by": "VISHAL",
+      "issue_status": "closed",
       "attachements": {}
     },
     {
@@ -146,7 +158,45 @@
       "issue_sub_type": "Assignment",
       "due_date": "2023-07-26",
       "assigned_to": "RAGUL",
+      "created_by": "VISHAL",
+      "issue_status": "resolved",
       "attachements": {}
+    },
+    {
+      "id": 1008,
+      "issue_description": "check working or not",
+      "issue_related_to": "student",
+      "issue_type": "Academic",
+      "issue_sub_type": "Assessment",
+      "due_date": "2023-07-20",
+      "assigned_to": "RAGUL",
+      "created_by": "VISHAL",
+      "issue_status": "open",
+      "attachements": null
+    },
+    {
+      "id": 1009,
+      "issue_description": "argvbr",
+      "issue_related_to": "school",
+      "issue_type": "Securities",
+      "issue_sub_type": "Securities",
+      "due_date": "2023-07-19",
+      "assigned_to": "VISHAL",
+      "created_by": "VISHAL",
+      "issue_status": "resolved",
+      "attachements": null
+    },
+    {
+      "id": 1010,
+      "issue_description": "24EETGF2E4",
+      "issue_related_to": "school",
+      "issue_type": "Administrartion",
+      "issue_sub_type": "Administrartion",
+      "due_date": "2023-07-19",
+      "assigned_to": "LILY",
+      "created_by": "VISHAL",
+      "issue_status": "open",
+      "attachements": null
     }
   ],
   "issue_type": {

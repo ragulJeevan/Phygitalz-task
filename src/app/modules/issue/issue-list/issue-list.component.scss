@@ -1,0 +1,193 @@
+// CARD _ HEADING 
+.heading {
+  margin-left: 17px;
+  color: #e74ce7;
+  background: aliceblue;
+}
+
+// TOTAL CARD 
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f3f3f300;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  height: 68vh;
+  overflow-x: scroll;
+// FOR ROW 
+  .row {
+    display: flex;
+
+// FOR COL 
+    .col-md-3 {
+      flex-basis: 25%;
+      justify-content: center;
+    }
+
+    .col-md-6 {
+      flex-basis: 50%;
+      padding: 0 10px;
+    }
+// FOR SEARCH INPUT 
+    input {
+      background: #e7dddd;
+      border: none;
+      border-radius: 25px;
+      padding: 15px 50px;
+      font-size: 16px;
+    }
+
+  }
+// FOR BUTTON INSIDE CARD 
+  button {
+    padding: 10px;
+    // background: linear-gradient(to left, #800080, rgb(189 53 121 / 73%));
+    background-color: #ededed;
+    ;
+    color: #7a7575;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #aaa;
+    }
+    // button.clicked {
+    //   background-color: linear-gradient(to left, #800080, rgb(189 53 121 / 73%));
+    //   color: #ffffff;
+    // }
+   
+  }
+// FOR TABLE INSIODE CARD 
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    thead {
+      background-color: #f2f2f24a;
+      border-bottom: 1px solid;
+      border-top: 1px solid #fbf0f0;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      font-weight: bold;
+    }
+    .striped-row {
+      background-color: #e3dede;
+    }
+    .no-data-cell {
+      text-align: center;
+    }
+  }
+}
+.active{
+  background-color: #800078db !important;
+  color: #ffffff !important;
+}
+// TO SHOW LIGHT TEXT
+.fw-dull {
+  color: #a7a1a1;
+  font-size: 25px;
+  font-weight: bold;
+}
+// SEARCH INPUT STYLES 
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  .custom-input {
+    font-size: 16px;
+  }
+// SEARCH ICON STYLES 
+  button {
+    font-size: 20px;
+    background: none;
+    margin-left: -45px;
+  }
+
+}
+// FOR ISSUE RELATED BUTTON 
+.cluster {
+  padding: 10px 25px !important;
+}
+// FOR ISSUE STATUS COUNT FILTERS 
+.container {
+  display: flex;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(135 53 189 / 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+// FOR FONT BOLD 
+.fw-bold {
+  font-weight: bold;
+  font-size: 17px;
+  color: black;
+}
+// FOR MARGIN TOP 
+.mt {
+  margin-top: 25px;
+}
+// FOR SEARCH BUTTON 
+.button-container {
+  display: flex;
+  
+}
+
+.button-container button {
+  margin-right: 10px;
+  background: none;
+}
+// CREATE ISSUE BUTTON 
+.create-issue{
+  margin-top: 10px;
+  padding: 15px 50px;
+  margin-left: 25px;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(to left, #800080, rgb(189 53 121 / 73%));
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+// CREATE ISSUE MODAL 
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1050;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 60vh;
+  height: 60vh;
+}

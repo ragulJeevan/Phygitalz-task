@@ -1,0 +1,97 @@
+.card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .card-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    padding: 20px;
+    max-height: 45vh;
+    overflow-y: scroll;
+  }
+  
+  /* Adjust the scrollbar styles */
+  .card-body::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .card-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .card-body::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  .card-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    background-color:#b80cbd;
+    color: white;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #a00cbd;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+
+  .rectangle {
+    display: inline-block;
+    border: none;
+    padding: 10px 83px;
+    border-radius: 7px 7px 16px 16px;
+    background: linear-gradient(to left, #800080, rgb(189 53 121 / 73%));
+    color: white;
+  }
+  .end-button{
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+  }
+  .btn-outline{
+    color: #b80cbd;
+    padding: 8px 25px;
+    border: 1px solid;
+    border-radius: 17px;
+    cursor: pointer;
+  }

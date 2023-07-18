@@ -1,24 +1,127 @@
-<button>Create Issue</button>
-
-<table>
+<!-- CREATE ISSUE BUTTON  -->
+<button class="create-issue" (click)="openCreateIssue(createIssue)" >Create Issue</button>
+  
+<div class="card ">
+ 
+  <!-- ISSUE DETAILS AND SEARCH -->
+  <div class="row">
+    <!-- CARD HEADING -->
+    <div class="col-md-6">
+ <h1 >
+  <span class="heading" >ISSUE DETAILS</span>
+</h1>
+    </div>
+    <!-- SEARCH ISSUE  -->
+    <div class="col-md-6">
+      <div class="search-container">
+        <span><button><i class="fas fa-search fa-lg"></i></button></span>
+        <input type="text" placeholder="Search Issues" class="custom-input">
+      </div>
+    </div>
+  </div>
+  
+  <!-- FILTERS TO USE -->
+  <div class="row">
+    <!-- SHOW ISSUES  -->
+    <div class="col-md-3 mt">
+      <span class="fw-dull" >Show issues</span>
+      <div class="row">
+        <div class="col-md-4">
+          <button (click)="filteredIssues('show Issues','created_by_me')" [ngClass]="{'active': assignedStatus === 'created_by_me'}" >Created By me</button>
+        </div>
+        <div class="col-md-4">
+          <button (click)="filteredIssues('show Issues','assigned_to_me')" [ngClass]="{'active': assignedStatus === 'assigned_to_me'}" >Assigned to me</button>
+        </div>
+      </div>
+    </div>
+    <!-- ISSUES RELATED  -->
+    <div class="col-md-3 mt">
+      <span class="fw-dull" >Issues Related To</span>
+     
+      <div class="row">
+        <div class="col-md-3">
+          <button class="cluster" (click)="filteredIssues('issue_related','school')" [ngClass]="{'active': relatedStatus === 'school'}" >School</button>
+        </div>
+        <div class="col-md-3">
+          <button class="cluster" (click)="filteredIssues('issue_related','student')" [ngClass]="{'active': relatedStatus === 'student'}" >Student</button>
+        </div>
+      </div>
+    </div>
+    <!-- ISSUE STATUS COUNT  -->
+    <div class="col-md-6">
+      <div class="container">
+         <!-- TOTAL  -->
+         <!-- <button class="section" (click)="filteredIssues('status','total')" [ngClass]="{'active': typeStatus === 'total'}" >
+          <div class="circle">
+            {{totalIssue}}
+          </div>
+          <span class="fw-bold" >Total</span>
+        </button> -->
+        <!-- OPEN  -->
+        <button class="section" (click)="filteredIssues('status','open')" [ngClass]="{'active': typeStatus === 'open'}" >
+          <div class="circle">
+            {{openIssue}}
+          </div>
+          <span class="fw-bold" >Open</span>
+        </button>
+        <!-- RESOLVED  -->
+        <button class="section" (click)="filteredIssues('status','resolved')" [ngClass]="{'active': typeStatus === 'resolved'}" >
+          <div class="circle">
+            {{resolvedIssue}}
+          </div>
+          <span class="fw-bold" >Resolved</span>
+        </button>
+        <!-- CLOSED  -->
+        <button class="section" (click)="filteredIssues('status','closed')" [ngClass]="{'active': typeStatus === 'closed'}" >
+          <div class="circle">
+            {{closedIssue}}
+          </div>
+          <span class="fw-bold" >Closed</span>
+        </button>
+       
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- TABLE OF CONTENTS -->
+  <table>
     <thead>
-        <tr>
-            <td>Issue no</td>
-            <td>Description</td>
-            <td>Assigned to</td>
-            <td>Due Date</td>
-            <td>Type</td>
-            <td>Action</td>
-        </tr>
+      <tr>
+        <th style="width: 15%;">Issue No</th>
+        <th style="width: 40%;">Description</th>
+        <th style="width: 15%;">Assigned To</th>
+        <th style="width: 10%;">Due Date</th>
+        <th style="width: 15%;">Type</th>
+        <th style="width: 15%;">Action</th>
+      </tr>
     </thead>
     <tbody>
-        <tr *ngFor = "let issue of issueData;let i = index" >
-            <td>{{issue.id}}</td>
-            <td>{{issue.issue_description}}</td>
-            <td>{{issue.assigned_to}}</td>
-            <td>{{issue.due_date}}</td>
-            <td>{{issue.issue_type}}</td>
-            <td><button>nothing</button></td>
-        </tr>
+      <tr *ngFor="let issue of issueData; let i = index"[ngClass]="{ 'striped-row': i % 2 === 0 }">
+        <td style="width: 15%;">{{ issue.id }}</td>
+        <td style="width: 40%;">{{ issue.issue_description }}</td>
+        <td style="width: 15%;">{{ issue.assigned_to }}</td>
+        <td style="width: 15%;">{{ issue.due_date }}</td>
+        <td style="width: 10%;">{{ issue.issue_type }}</td>
+        <td style="width: 15%;">
+          <div  class="button-container" >
+            <button  ><i class="fa fa-eye" style="color:#871987; font-size:20px" aria-hidden="true"></i></button>
+            <button><i class="fa fa-trash" style="color:#871987; font-size:20px" aria-hidden="true"></i></button>
+          </div>
+        </td>
+      </tr>
+      <!-- NO DATA  -->
+      <tr *ngIf = "issueData?.length === 0" >
+        <td colspan="6"  class=" no-data-cell fw-bold">NO DATA TO SHOW</td>
+      </tr>
     </tbody>
-</table>
+  </table>
+</div>
+
+<!-- CREATE ISSUE MODAL  -->
+<ng-template #createIssue let-modal>
+  <div class="custom-modal">
+    <app-create-issue (closeIssue)="closeModal($event)" ></app-create-issue>
+  </div>
+</ng-template>
+

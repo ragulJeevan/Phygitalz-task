@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Toast, ToastrService } from 'ngx-toastr';
 import { Issue } from 'src/app/models/issue';
@@ -11,6 +11,8 @@ import { IssueService } from 'src/app/services/issue.service';
   styleUrls: ['./create-issue.component.scss']
 })
 export class CreateIssueComponent implements OnInit {
+
+  @Output() closeIssue = new EventEmitter<any>();
 
   // TO STORE FORM DATA 
   public issueForm!: FormGroup;
@@ -26,6 +28,8 @@ export class CreateIssueComponent implements OnInit {
   public issueRelated : string = '';
   // VARIABLE TO STORE ASSIGNEE 
   public assignee : any = [];
+  // VARIABLE TO STORE LOGGED IN ASSIGNEE 
+  public currentUser : string = 'VISHAL';
 
   constructor(
     private commonService: CommonService,
@@ -76,11 +80,14 @@ export class CreateIssueComponent implements OnInit {
       issue_sub_type: issueDetails.issue_sub_type,
       due_date: issueDetails.due_date,
       assigned_to: issueDetails.assigned_to,
+      created_by:this.currentUser,
+      issue_status:'open',
       attachements: issueDetails.attachements,
     };
     this.issueService.postIssue(url, payLoad).subscribe((res: any) => {
       this.toastr.success('Issue Created Successfully');
       this.resetForm();
+      this.closeModal();
     }, ((err: any) => {
       console.log(err.error);
       if (err.error && err.error.message) {
@@ -157,6 +164,7 @@ export class CreateIssueComponent implements OnInit {
       
     }))
   }
+  // TO REST FORM 
   resetForm(){
     this.issueForm.reset();
     this.selectedType = null;
@@ -164,5 +172,9 @@ export class CreateIssueComponent implements OnInit {
     this.issueType = [];
     this.issueSubType = [];
     this.assignee = [];
+  }
+  // TO CLOSE MODAL 
+  closeModal(){
+    this.closeIssue.emit(true);
   }
 }
