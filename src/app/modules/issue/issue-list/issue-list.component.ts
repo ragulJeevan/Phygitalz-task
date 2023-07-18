@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { CommonService } from 'src/app/services/common.service';
 import { IssueService } from 'src/app/services/issue.service';
@@ -41,6 +42,7 @@ export class IssueListComponent implements OnInit {
     private commonService: CommonService,
     private issueService: IssueService,
     private modalService: NgbModal,
+    private router : Router,
   ) {
 
   }
@@ -163,6 +165,10 @@ export class IssueListComponent implements OnInit {
       this.isSearch = false;
     }
 
+  }
+  // GO TO DASHBOARD 
+  goToDashboard(){
+    this.router.navigate(['/dashboard/dashboard']);
   }
 
 }

@@ -188,6 +188,20 @@
   border: none;
   font-weight: bold;
   font-size: 16px;
+
+  .left {
+    /* Add specific styles for the left button here */
+    margin-right: auto;
+  }
+  
+  .right {
+    /* Add specific styles for the right button here */
+    margin-left: auto;
+  }
+}
+.ends {
+  display: flex;
+  justify-content: space-between;
 }
 
 // CREATE ISSUE MODAL 
