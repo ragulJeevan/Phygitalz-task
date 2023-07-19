@@ -12,6 +12,9 @@ import { IssueService } from 'src/app/services/issue.service';
 })
 export class DashboardComponent {
 
+  showFirstChart: boolean = false;
+showSecondChart: boolean = false;
+
   // TO STORE ADMISSION DATA 
   public admissionData: any = [];
   // TO STORE YEAR DATA 
@@ -40,6 +43,13 @@ export class DashboardComponent {
     this.getData();
 
     this.getAdmissionData();
+
+    setTimeout(() => {
+      this.showFirstChart = true;
+      setTimeout(() => {
+        this.showSecondChart=true;
+      }, 1000);
+    }, 1000);
 
   }
 
