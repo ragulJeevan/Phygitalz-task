@@ -1,72 +1,61 @@
-<!-- 
-<div class="dropdown-container">
-    <div class="dropdown">
+<div class="ends"  >
+  <h2><span class="heading">STUDENTS ADMISSION CHARTS</span></h2>
+  <!-- <button class="create-issue" (click)="openCreateIssue(createIssue)">Create Issue</button> -->
+  <button class="create-issue" (click)="goToIssues()" >Go To Dashboard</button>
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- Select Year -->
+    <div class="col-md-4">
       <label for="year">SELECT YEAR</label>
       <select id="year" [(ngModel)]="selectedYear" (change)="filterData()">
         <option *ngFor="let year of yearData" [value]="year.year_name">{{year.year_name}}</option>
       </select>
     </div>
-    <div class="dropdown">
+    <!-- Select University -->
+    <div class="col-md-4">
       <label for="university">SELECT UNIVERSITY</label>
       <select id="university" [(ngModel)]="selectedUniversity" (change)="filterData()">
         <option *ngFor="let uni of universityData" [value]="uni.university_name">{{uni.university_name}}</option>
       </select>
     </div>
-    <div class="dropdown">
+    <!-- Select Branch -->
+    <div class="col-md-4">
       <label for="branch">SELECT BRANCH</label>
       <select id="branch" [(ngModel)]="selectedBranch" (change)="filterData()">
         <option *ngFor="let branch of branchData" [value]="branch.branch_name">{{branch.branch_name}}</option>
       </select>
     </div>
-  </div> -->
-  <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <label for="year">SELECT YEAR</label>
-          <select id="year" [(ngModel)]="selectedYear" (change)="filterData()">
-            <option *ngFor="let year of yearData" [value]="year.year_name">{{year.year_name}}</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-            <label for="university">SELECT UNIVERSITY</label>
-          <select id="university" [(ngModel)]="selectedUniversity" (change)="filterData()">
-            <option *ngFor="let uni of universityData" [value]="uni.university_name">{{uni.university_name}}</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-            <label for="branch">SELECT BRANCH</label>
-            <select id="branch" [(ngModel)]="selectedBranch" (change)="filterData()">
-              <option *ngFor="let branch of branchData" [value]="branch.branch_name">{{branch.branch_name}}</option>
-            </select>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-header">
-              <h1>ADMISSION BAR CHART</h1>
-            </div>
-            <div class="card-body">
-             <app-bar-chart [chartData]="filteredData" ></app-bar-chart>
-             <p>Students</p>
-            </div>
-            <div class="card-footer"></div>
-          </div>
-        </div>
-        <div class="col"  >
-          <div class="card">
-            <div class="card-header">
-              <h1>ADMISSION LINE CHART</h1>
-            </div>
-            <div class="card-body">
-              <app-line-chart [chartData]="filteredData" ></app-line-chart>
-              <p>Students</p>
-            </div>
-            <div class="card-footer"></div>
-        </div>
-    </div>
-    </div>
   </div>
- 
-  
+
+  <div class="row">
+    <div class="col">
+      <!-- Admission Bar Chart -->
+      <div class="card">
+        <div class="card-header">
+          <h1>ADMISSION BAR CHART</h1>
+        </div>
+        <div class="card-body">
+          <app-bar-chart [chartData]="filteredData"></app-bar-chart>
+          <p>Students</p>
+        </div>
+        <div class="card-footer"></div>
+      </div>
+    </div>
+    <div class="col">
+      <!-- Admission Line Chart -->
+      <div class="card">
+        <div class="card-header">
+          <h1>ADMISSION LINE CHART</h1>
+        </div>
+        <div class="card-body">
+          <app-line-chart [chartData]="filteredData"></app-line-chart>
+          <p>Students</p>
+        </div>
+        <div class="card-footer"></div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>

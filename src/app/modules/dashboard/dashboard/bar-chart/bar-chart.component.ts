@@ -28,7 +28,7 @@ export class BarChartComponent {
   const chart = new Chart({
     container: 'container',
     autoFit: true,
-    height: 500,
+    height: 300,
     width:400
     });
     

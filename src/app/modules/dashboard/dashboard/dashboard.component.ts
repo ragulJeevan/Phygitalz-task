@@ -35,6 +35,7 @@ showSecondChart: boolean = false;
  
   constructor(
     private commonService: CommonService,
+    private router : Router
   ) {
 
   }
@@ -94,5 +95,10 @@ showSecondChart: boolean = false;
   );
    
     console.log(this.filteredData);
+  }
+
+  // GO TO ISSUES 
+  goToIssues(){
+    this.router.navigate(['/issues']);
   }
 }

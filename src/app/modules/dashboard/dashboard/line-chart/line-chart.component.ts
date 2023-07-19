@@ -24,7 +24,7 @@ export class LineChartComponent {
     const chart = new Chart({
       container: 'container1',
       autoFit: true,
-      height: 500,
+      height: 300,
       width:400
       });
       
