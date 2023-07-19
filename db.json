@@ -324,5 +324,1983 @@
         "issue_sub_type_name": "Punctuality"
       }
     ]
+  },
+  "chartDatas": {
+    "data": {
+      "year": [
+        {
+          "year_name": 2011,
+          "year_id": 2001
+        },
+        {
+          "year_name": 2012,
+          "year_id": 2002
+        },
+        {
+          "year_name": 2013,
+          "year_id": 2003
+        },
+        {
+          "year_name": 2014,
+          "year_id": 2004
+        },
+        {
+          "year_name": 2015,
+          "year_id": 2005
+        },
+        {
+          "year_name": 2016,
+          "year_id": 2006
+        }
+      ],
+      "city": [
+        {
+          "city_id": 1001,
+          "city_name": "chennai"
+        },
+        {
+          "city_id": 1002,
+          "city_name": "coimbatore"
+        },
+        {
+          "city_id": 1003,
+          "city_name": "salem"
+        },
+        {
+          "city_id": 1004,
+          "city_name": "madurai"
+        },
+        {
+          "city_id": 1005,
+          "city_name": "trichy"
+        },
+        {
+          "city_id": 1006,
+          "city_name": "dindigul"
+        }
+      ],
+      "university": [
+        {
+          "university_id": 3001,
+          "university_name": "ANNA"
+        },
+        {
+          "university_id": 3002,
+          "university_name": "SRM"
+        },
+        {
+          "university_id": 3003,
+          "university_name": "PSG"
+        }
+      ],
+      "branch": [
+        {
+          "branch_id": 5001,
+          "branch_name": "MECH"
+        },
+        {
+          "branch_id": 5003,
+          "branch_name": "CSE"
+        },
+        {
+          "branch_id": 5004,
+          "branch_name": "ECE"
+        }
+      ]
+    }
+  },
+  "chartDetails": {
+    "data": [
+      {
+        "year": 2011,
+        "city": "chennai",
+        "students": 103,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "chennai",
+        "students": 130,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "chennai",
+        "students": 104,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "chennai",
+        "students": 130,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "chennai",
+        "students": 120,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "chennai",
+        "students": 124,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "chennai",
+        "students": 121,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "chennai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "coimbatore",
+        "students": 154,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "coimbatore",
+        "students": 113,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "coimbatore",
+        "students": 106,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "coimbatore",
+        "students": 111,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "coimbatore",
+        "students": 161,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "coimbatore",
+        "students": 156,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "coimbatore",
+        "students": 153,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "coimbatore",
+        "students": 132,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "coimbatore",
+        "students": 121,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "coimbatore",
+        "students": 115,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "madurai",
+        "students": 133,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "madurai",
+        "students": 123,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "madurai",
+        "students": 141,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "madurai",
+        "students": 155,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "madurai",
+        "students": 167,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "madurai",
+        "students": 143,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "madurai",
+        "students": 132,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "madurai",
+        "students": 131,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "madurai",
+        "students": 145,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "trichy",
+        "students": 156,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "trichy",
+        "students": 137,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "trichy",
+        "students": 148,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "trichy",
+        "students": 152,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "trichy",
+        "students": 141,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "trichy",
+        "students": 127,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "trichy",
+        "students": 126,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "trichy",
+        "students": 141,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "trichy",
+        "students": 152,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "dindigul",
+        "students": 162,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "dindigul",
+        "students": 118,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "dindigul",
+        "students": 144,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "dindigul",
+        "students": 151,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "dindigul",
+        "students": 142,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "dindigul",
+        "students": 132,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2011,
+        "city": "dindigul",
+        "students": 136,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2011,
+        "city": "dindigul",
+        "students": 145,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2011,
+        "city": "dindigul",
+        "students": 142,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "chennai",
+        "students": 155,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "chennai",
+        "students": 125,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "chennai",
+        "students": 147,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "chennai",
+        "students": 173,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "chennai",
+        "students": 167,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "chennai",
+        "students": 155,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "chennai",
+        "students": 156,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "chennai",
+        "students": 146,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "coimbatore",
+        "students": 138,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "coimbatore",
+        "students": 122,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "coimbatore",
+        "students": 121,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "coimbatore",
+        "students": 155,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "coimbatore",
+        "students": 138,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "coimbatore",
+        "students": 111,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "coimbatore",
+        "students": 121,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "madurai",
+        "students": 143,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "madurai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "madurai",
+        "students": 156,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "madurai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "madurai",
+        "students": 138,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "madurai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "madurai",
+        "students": 254,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "madurai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "madurai",
+        "students": 243,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "trichy",
+        "students": 133,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "trichy",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "trichy",
+        "students": 139,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "trichy",
+        "students": 149,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "trichy",
+        "students": 158,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "trichy",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "trichy",
+        "students": 133,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "dindigul",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "dindigul",
+        "students": 147,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "dindigul",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "dindigul",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "dindigul",
+        "students": 161,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "dindigul",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2012,
+        "city": "dindigul",
+        "students": 119,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2012,
+        "city": "dindigul",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2012,
+        "city": "dindigul",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "chennai",
+        "students": 120,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "chennai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "chennai",
+        "students": 150,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "chennai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "chennai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "chennai",
+        "students": 140,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "chennai",
+        "students": 110,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "chennai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "coimbatore",
+        "students": 113,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "coimbatore",
+        "students": 116,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "coimbatore",
+        "students": 117,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "coimbatore",
+        "students": 127,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "coimbatore",
+        "students": 145,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "coimbatore",
+        "students": 167,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "madurai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "madurai",
+        "students": 101540,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "madurai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "madurai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "madurai",
+        "students": 143,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "madurai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "madurai",
+        "students": 136,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "madurai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "madurai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "trichy",
+        "students": 149,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "trichy",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "trichy",
+        "students": 159,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "trichy",
+        "students": 124,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "trichy",
+        "students": 123,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "trichy",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "trichy",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "dindigul",
+        "students": 138,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "dindigul",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "dindigul",
+        "students": 118,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "dindigul",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "dindigul",
+        "students": 128,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "dindigul",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2013,
+        "city": "dindigul",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2013,
+        "city": "dindigul",
+        "students": 154,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2013,
+        "city": "dindigul",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "chennai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "chennai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "chennai",
+        "students": 165,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "chennai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "chennai",
+        "students": 133,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "chennai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "chennai",
+        "students": 143,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "chennai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "coimbatore",
+        "students": 132,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "coimbatore",
+        "students": 132,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "coimbatore",
+        "students": 133,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "coimbatore",
+        "students": 136,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "madurai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "madurai",
+        "students": 135,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "madurai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "madurai",
+        "students": 144,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "madurai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "madurai",
+        "students": 141,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "madurai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "madurai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "madurai",
+        "students": 152,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "trichy",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "trichy",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "trichy",
+        "students": 122,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "trichy",
+        "students": 155,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "trichy",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "trichy",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "dindigul",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "dindigul",
+        "students": 144,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "dindigul",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "dindigul",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "dindigul",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "dindigul",
+        "students": 128,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2014,
+        "city": "dindigul",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2014,
+        "city": "dindigul",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2014,
+        "city": "dindigul",
+        "students": 145,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "chennai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "chennai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "chennai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "chennai",
+        "students": 155,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "chennai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "chennai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "chennai",
+        "students": 156,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "chennai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "coimbatore",
+        "students": 159,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "coimbatore",
+        "students": 186,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "madurai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "madurai",
+        "students": 122,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "madurai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "madurai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "madurai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "madurai",
+        "students": 121,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "madurai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "madurai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "madurai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "trichy",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "trichy",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "trichy",
+        "students": 132,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "trichy",
+        "students": 134,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "trichy",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "trichy",
+        "students": 143,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "trichy",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "dindigul",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "dindigul",
+        "students": 111,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "dindigul",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "dindigul",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "dindigul",
+        "students": 119,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "dindigul",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2015,
+        "city": "dindigul",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2015,
+        "city": "dindigul",
+        "students": 128,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2015,
+        "city": "dindigul",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "chennai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "chennai",
+        "students": 126,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "chennai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "chennai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "chennai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "chennai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "chennai",
+        "students": 121,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "chennai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "coimbatore",
+        "students": 138,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "coimbatore",
+        "students": 141,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "coimbatore",
+        "students": 154,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "coimbatore",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "madurai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "madurai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "madurai",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "madurai",
+        "students": 132,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "madurai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "madurai",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "madurai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "madurai",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "madurai",
+        "students": 133,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "trichy",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "trichy",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "trichy",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "trichy",
+        "students": 136,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "trichy",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "trichy",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "trichy",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "trichy",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "dindigul",
+        "students": 131,
+        "university": "ANNA",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "dindigul",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "dindigul",
+        "students": 100,
+        "university": "ANNA",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "dindigul",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "dindigul",
+        "students": 100,
+        "university": "SRM",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "dindigul",
+        "students": 138,
+        "university": "SRM",
+        "Branch": "ECE"
+      },
+      {
+        "year": 2016,
+        "city": "dindigul",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "MECH"
+      },
+      {
+        "year": 2016,
+        "city": "dindigul",
+        "students": 100,
+        "university": "PSG",
+        "Branch": "CSE"
+      },
+      {
+        "year": 2016,
+        "city": "dindigul",
+        "students": 144,
+        "university": "PSG",
+        "Branch": "ECE"
+      }
+    ]
   }
 }
