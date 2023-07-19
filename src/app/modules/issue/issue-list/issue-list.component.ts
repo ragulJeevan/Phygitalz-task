@@ -49,6 +49,7 @@ export class IssueListComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.commonService.setStateHeaader('Manage Issue');
     this.getUserList();
     // this.getIssues();
     this.filteredIssues('', '');

@@ -40,6 +40,7 @@ showSecondChart: boolean = false;
   }
 
   ngOnInit(): void {
+    this.commonService.setStateHeaader('Dashboard');
     this.getData();
 
     this.getAdmissionData();

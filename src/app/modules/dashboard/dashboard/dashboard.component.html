@@ -1,36 +1,72 @@
-<div class="container">
-  <ng-container *ngIf="showFirstChart">
-    <div class="chart">
-      <app-bar-chart [chartData]="filteredData"></app-bar-chart>
+<!-- 
+<div class="dropdown-container">
+    <div class="dropdown">
+      <label for="year">SELECT YEAR</label>
+      <select id="year" [(ngModel)]="selectedYear" (change)="filterData()">
+        <option *ngFor="let year of yearData" [value]="year.year_name">{{year.year_name}}</option>
+      </select>
     </div>
-  </ng-container>
-
-  <div class="dropdown-container">
+    <div class="dropdown">
+      <label for="university">SELECT UNIVERSITY</label>
+      <select id="university" [(ngModel)]="selectedUniversity" (change)="filterData()">
+        <option *ngFor="let uni of universityData" [value]="uni.university_name">{{uni.university_name}}</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="branch">SELECT BRANCH</label>
+      <select id="branch" [(ngModel)]="selectedBranch" (change)="filterData()">
+        <option *ngFor="let branch of branchData" [value]="branch.branch_name">{{branch.branch_name}}</option>
+      </select>
+    </div>
+  </div> -->
+  <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <label for="year">SELECT YEAR</label>
-        <select id="year" [(ngModel)]="selectedYear" (change)="filterData()">
-          <option *ngFor="let year of yearData" [value]="year.year_name">{{year.year_name}}</option>
-        </select>
+        <div class="col-md-4">
+            <label for="year">SELECT YEAR</label>
+          <select id="year" [(ngModel)]="selectedYear" (change)="filterData()">
+            <option *ngFor="let year of yearData" [value]="year.year_name">{{year.year_name}}</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+            <label for="university">SELECT UNIVERSITY</label>
+          <select id="university" [(ngModel)]="selectedUniversity" (change)="filterData()">
+            <option *ngFor="let uni of universityData" [value]="uni.university_name">{{uni.university_name}}</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+            <label for="branch">SELECT BRANCH</label>
+            <select id="branch" [(ngModel)]="selectedBranch" (change)="filterData()">
+              <option *ngFor="let branch of branchData" [value]="branch.branch_name">{{branch.branch_name}}</option>
+            </select>
+        </div>
       </div>
-      <div class="col-md-4">
-        <label for="university">SELECT UNIVERSITY</label>
-        <select id="university" [(ngModel)]="selectedUniversity" (change)="filterData()">
-          <option *ngFor="let uni of universityData" [value]="uni.university_name">{{uni.university_name}}</option>
-        </select>
-      </div>
-      <div class="col-md-4">
-        <label for="branch">SELECT BRANCH</label>
-        <select id="branch" [(ngModel)]="selectedBranch" (change)="filterData()">
-          <option *ngFor="let branch of branchData" [value]="branch.branch_name">{{branch.branch_name}}</option>
-        </select>
-      </div>
+      
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h1>ADMISSION BAR CHART</h1>
+            </div>
+            <div class="card-body">
+             <app-bar-chart [chartData]="filteredData" ></app-bar-chart>
+             <p>Students</p>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </div>
+        <div class="col"  >
+          <div class="card">
+            <div class="card-header">
+              <h1>ADMISSION LINE CHART</h1>
+            </div>
+            <div class="card-body">
+              <app-line-chart [chartData]="filteredData" ></app-line-chart>
+              <p>Students</p>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
     </div>
   </div>
-
-  <ng-container *ngIf="showSecondChart">
-    <div class="chart">
-      <app-bar-chart [chartData]="filteredData"></app-bar-chart>
-    </div>
-  </ng-container>
-</div>
+ 
+  
