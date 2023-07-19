@@ -2,9 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
+## Packages Added
+G2plot antv G2 antv and JSON server Db
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## JSON SERVER DB
+Run `npm run json-run` to start the json server db, it will hosting on `localhost:3000`, all the data for the project is stored on this db.
 
 ## Code scaffolding
 
