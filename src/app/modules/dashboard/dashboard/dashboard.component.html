@@ -1,1 +1,21 @@
 <p>dashboard works!</p>
+<div class="row">
+    <div class="col-md-4">
+        <label for="year">SELECT YEAR</label>
+      <select id="year" [(ngModel)]="selectedYear" (change)="filterData()">
+        <option *ngFor="let year of yearData" [value]="year.year_name">{{year.year_name}}</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+        <label for="university">SELECT UNIVERSITY</label>
+      <select id="university" [(ngModel)]="selectedUniversity" (change)="filterData()">
+        <option *ngFor="let uni of universityData" [value]="uni.university_name">{{uni.university_name}}</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+        <label for="branch">SELECT BRANCH</label>
+        <select id="branch" [(ngModel)]="selectedBranch" (change)="filterData()">
+          <option *ngFor="let branch of branchData" [value]="branch.branch_name">{{branch.branch_name}}</option>
+        </select>
+    </div>
+  </div>
